@@ -14,11 +14,12 @@ const Login = () => {
   const token = Cookies.getItem("jwtToken");
 
   const onSubmitDetails = async (e) => {
-    e.preventDefault();
+    
+    //! fetch call
+    //! response ok-- redirect to homepage
+    //! response failed -- Error msg to user
 
-    //fetch call
-    //response ok-- redirect to homepage
-    //response failed -- Error msg to user
+    e.preventDefault();
 
     const url = "https://apis.ccbp.in/login";
 
@@ -37,12 +38,12 @@ const Login = () => {
     };
 
     const response = await fetch(url, options);
-    // console.log(response);
+    console.log(response); //returns a promise
     const fetchData = await response.json();
     // console.log(fetchData); //returns token
 
     if (response.ok === true) {
-      // console.log("redirect to home");
+      console.log("redirect to home");
       Cookies.setItem("jwtToken", fetchData.jwt_token)
       setValues({ ...allValues, errorMsg: "" });
       navigate("/")
