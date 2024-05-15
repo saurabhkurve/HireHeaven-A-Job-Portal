@@ -1,0 +1,41 @@
+.jobs-card{
+    background-color: #272727;
+    /*background-color: darkgray;
+    */list-style: none;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    color: white;
+    padding: 15px;
+}
+
+.title-icon-rating-cont{
+    display: flex;
+    flex-direction: row;
+}
+.card-icon{
+    width: 60px;
+    margin-right: 10px;
+}
+
+.rating-icon{
+    color: yellow;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.location-emptype-package-cont{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.location{
+    margin-right: 10px;
+}

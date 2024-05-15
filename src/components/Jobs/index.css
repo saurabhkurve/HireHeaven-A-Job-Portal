@@ -1,0 +1,27 @@
+.jobs-container{
+    background-color: black;
+}
+
+.jobs-section {
+  width: 100%;
+  min-height: 100%;
+  /* background-color: black; */
+  display: flex;
+  justify-content: center;
+}
+
+.filter-section {
+  width: 25%;
+  height: 100vh;
+  border: 1px solid white;
+}
+
+.all-jobs-section {
+  width: 70%;
+  /* height: 100vh; */
+  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}

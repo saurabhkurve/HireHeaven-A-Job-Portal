@@ -1,12 +1,18 @@
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Cookies from "js-cookies";
+
 import "./index.css";
 
 const Header = () => {
+
+  const navigate = useNavigate();
+
   function handleLogout() {
     Cookies.removeItem("jwtToken");
 
-    window.location.href = "/login";
+    // window.location.href = "/login";
+    navigate("/login");
   }
 
   return (
