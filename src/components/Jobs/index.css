@@ -1,5 +1,47 @@
-.jobs-container{
-    background-color: black;
+.jobs-container {
+  background-color: black;
+}
+.input-container {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: start;
+  margin-left: 70px;
+  position: relative;
+  border: none;
+}
+
+.input-container > input {
+ color: white;
+ font-size: 18px;
+ border: 2px solid #272727;
+ outline: none;
+ font-weight: 600;
+ padding-left: 15px;
+ color: #ffffff;
+ background-color: transparent;
+ border-radius: 5px;
+ -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ -ms-border-radius: 5px;
+ -o-border-radius: 5px;
+}
+
+.input-container > span {
+  width: 49.8px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 50.1%;
+  top: 2.3%;
+  background-color: #272727;
+  color: white;
+  border-radius: 1px;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  -ms-border-radius: 1px;
+  -o-border-radius: 1px;
 }
 
 .jobs-section {
@@ -13,7 +55,7 @@
 .filter-section {
   width: 25%;
   height: 100vh;
-  border: 1px solid white;
+  /* border: 1px solid white; */
 }
 
 .all-jobs-section {

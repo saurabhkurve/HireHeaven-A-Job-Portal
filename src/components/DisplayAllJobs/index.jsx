@@ -22,10 +22,10 @@ const DisplayAllJobs = (props) => {
           </div>
 
           <div className="location-emptype-package-cont">
-            <div className="d-flex flex-row ">
-              <span className="me-1"><FaLocationDot/></span>
+            <div className="d-flex flex-row gap-1">
+              <span className="me-1 icons-location-type"><FaLocationDot/></span>
               <p className="me-2">{jobsItem.location}</p>
-              <span className="me-2"> <BsBriefcaseFill/></span>
+              <span className="me-1 icons-location-type"> <BsBriefcaseFill/></span>
               <p className="me-2">{jobsItem.employment_type}</p>
             </div>
 
