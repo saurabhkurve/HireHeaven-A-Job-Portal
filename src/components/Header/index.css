@@ -77,3 +77,91 @@ link:hover{
     align-items: center;
     margin-right: 3rem;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .my-nav{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        padding: 0;
+    }
+
+    .nav-menus{
+        width: 100%;
+        justify-content:center;
+        margin-right: 0;
+    }
+
+    .nav-menus li{
+        margin-left: 20px;
+        margin-right: 0;
+    }
+
+    .home-btn{
+        margin-top: 0;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .my-nav{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 5rem;
+        padding: 15px;
+    }
+
+    .nav-menus{
+        width: auto;
+        margin-right: 0;
+    }
+
+    .nav-menus li{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .home-btn{
+        margin-top: 0;
+        margin-right: 0;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .logo-div {
+        width: 80%;
+    }
+
+    .header-logo {
+        width: 8rem;
+        padding-left: 2%;
+    }
+
+    .my-nav {
+        height: 80px;
+        padding: 0;
+    }
+
+    .nav-menus {
+        width: 100%;
+        justify-content: center;
+        margin-right: 5px;
+        
+    }
+
+    .nav-menus li {
+        margin-left: 15px;
+        margin-right: 0;
+        font-size: 15px;
+    }
+
+    .home-btn {
+        margin-top: 0;
+        margin-right: 0;
+        width: 80px;
+        margin-right: 10px;
+    }
+}

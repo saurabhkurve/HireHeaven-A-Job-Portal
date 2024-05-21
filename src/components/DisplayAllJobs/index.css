@@ -40,3 +40,26 @@
     /* border: 2px solid red; */
     /* margin-bottom: 0px; */
 }
+
+.all-jobs-card{
+    text-decoration: none;
+}
+
+
+@media screen and (max-width: 425px) {
+    .all-jobs-section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    
+  }
+  
+  @media screen and (min-width: 426px) and (max-width: 768px) {
+    .all-jobs-section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    
+  }

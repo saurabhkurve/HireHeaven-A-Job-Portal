@@ -50,17 +50,19 @@ const FilterSection = (props) => {
   useEffect(() => {
     const getProfileDetails = async () => {
       const apiUrl = "https://apis.ccbp.in/profile";
+
       const options = {
         headers: {
           Authorization: `Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InByYW5lZXRoYSIsInJvbGUiOiJQUklNRV9VU0VSIiwiaWF0IjoxNjIzMDY1NTMyfQ.68FuDFraHW7GplQiXVUrnsU1goYgmwd0tXNk6-HxCok`,
         },
         method: "GET",
       };
+
       const response = await fetch(apiUrl, options);
-      console.log("response: ", response);
+      // console.log("response: ", response);
       const data = await response.json();
-      console.log("Data: ", data);
-      console.log(data);
+      // console.log("Data: ", data);
+      // console.log(data);
       if (response.ok === true) {
         setvalue({ ...allValues, profileDetails: data.profile_details });
       }

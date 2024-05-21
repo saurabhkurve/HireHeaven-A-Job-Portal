@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { BsBriefcaseFill } from "react-icons/bs";
@@ -9,6 +10,7 @@ const DisplayAllJobs = (props) => {
   const {jobsItem} = props;
   return (
     <div>
+      <Link to={`/jobs/${jobsItem.id}`} className="all-jobs-card">
         <li className="jobs-card">
           <div className="title-icon-rating-cont">
            
@@ -36,6 +38,7 @@ const DisplayAllJobs = (props) => {
           <h5>Description</h5>
           <p>{jobsItem.job_description}</p>
         </li>
+        </Link>
     </div>
   )
 }
