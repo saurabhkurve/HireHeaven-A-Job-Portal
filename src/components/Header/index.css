@@ -143,6 +143,7 @@ link:hover{
     .my-nav {
         height: 80px;
         padding: 0;
+        /* border: 2px solid red; */
     }
 
     .nav-menus {
@@ -159,9 +160,11 @@ link:hover{
     }
 
     .home-btn {
+        width: 60px;
+        height: 25px;
+        margin-right: 110px;
         margin-top: 0;
-        margin-right: 0;
-        width: 80px;
-        margin-right: 10px;
+        font-size: 15px;
+        text-align: center;
     }
 }

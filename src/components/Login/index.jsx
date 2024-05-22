@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Cookies from "js-cookies"
+import Cookies from "js-cookies";
 import { useNavigate } from "react-router-dom";
 import "./style.css";
 
@@ -14,7 +14,6 @@ const Login = () => {
   const token = Cookies.getItem("jwtToken");
 
   const onSubmitDetails = async (e) => {
-    
     //! fetch call
     //! response ok-- redirect to homepage
     //! response failed -- Error msg to user
@@ -38,15 +37,15 @@ const Login = () => {
     };
 
     const response = await fetch(url, options);
-    console.log(response); 
+    console.log(response);
     const fetchData = await response.json();
     // console.log(fetchData); //returns token
 
     if (response.ok === true) {
       // console.log("redirect to home");
-      Cookies.setItem("jwtToken", fetchData.jwt_token)
+      Cookies.setItem("jwtToken", fetchData.jwt_token);
       setValues({ ...allValues, errorMsg: "" });
-      navigate("/")
+      navigate("/");
     } else {
       setValues({ ...allValues, errorMsg: fetchData.error_msg });
     }
@@ -70,8 +69,10 @@ const Login = () => {
     if (token !== null) {
       navigate("/");
     }
-    // alert("This is a prototype version of our web application. To access the site, please use the following credentials: username - 'rahul', password - 'rahul@2021'");
+    alert("To access the site, please use the following credentials as follows:\n\nusername - rahul\npassword - rahul@2021");
   }, []);
+
+ 
 
   return (
     <div className="login-container">
@@ -104,14 +105,10 @@ const Login = () => {
           />
         </div>
 
-        
-          <button type="submit" className="btn btn-primary login-btn">
-            Submit
-          </button>
-          <p className='error-msg'>
-            {allValues.errorMsg}
-          </p>
-        
+        <button type="submit" className="btn btn-primary login-btn">
+          Submit
+        </button>
+        <p className="error-msg">{allValues.errorMsg}</p>
       </form>
     </div>
   );
